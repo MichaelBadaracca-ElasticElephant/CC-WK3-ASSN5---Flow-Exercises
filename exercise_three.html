@@ -10,6 +10,18 @@
         var player1Score = parseFloat(prompt("Player 1 Score:"));
         var player2Score = parseFloat(prompt("Player 2 Score:"));
 
+        var player1Name = prompt("Player 1, what is your name? ");
+        var player2Name = prompt("Player 2, what is your name? ");
+
+        if(player1Score > player2Score){
+            console.log(player1Name + " has the higher score!")
+        }
+        else if(player1Score < player2Score){
+            console.log(player2Name + " has the higher score!")
+        }
+        else{
+            console.log("Tie");
+        }
         /*
             Todo:
             Prompt the players for their names.
